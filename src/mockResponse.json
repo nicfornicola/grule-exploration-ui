@@ -1,0 +1,59 @@
+[
+    {
+        "RuleID": "10000",
+        "Artist": "John Denver",
+        "LyricQuote": "\"Country roads, take me home to the place I belong.\"",
+        "Themes": {
+            "adventure": "A nostalgic journey to the beauty of West Virginia.",
+            "america": "A love letter to the Blue Ridge Mountains, Shenandoah River and its beauty.",
+            "carsTrucksTractors": "",
+            "goodtimes": "",
+            "grit": "",
+            "heartbreak": "",
+            "home": "A song that paints a vivid picture of home and longing.",
+            "lessons": "Captures nostalgia and appreciation for home and heritage.",
+            "love": "",
+            "rebellion": ""
+        },
+        "Title": "Take Me Home, Country Roads",
+        "VideoLink": "https://www.youtube.com/watch?v=1vrEljMfXYo"
+    },
+    {
+        "RuleID": "10001",
+        "Artist": "George Strait",
+        "LyricQuote": "\"All my exes live in Texas, and Texas is the place I’d really love to be.\"",
+        "Themes": {
+            "adventure": "",
+            "america": "References Texas life, Texarkana, Abilene, Galveston, and the Frio River.",
+            "carsTrucksTractors": "",
+            "goodtimes": "",
+            "grit": "",
+            "heartbreak": "A song that references life after several failed relationships. ",
+            "home": "",
+            "lessons": "",
+            "love": "",
+            "rebellion": "Singer lives a life where some think that he's died but instead he's living well in Tennessee."
+        },
+        "Title": "All My Ex’s Live In Texas",
+        "VideoLink": "https://www.youtube.com/watch?v=QuJroujjYDk"
+    },
+    {
+        "RuleID": "10002",
+        "Artist": "Waylon Jennings",
+        "LyricQuote": "\"Let's go to Luckenbach, Texas, with Waylon and Willie and the boys.\"",
+        "Themes": {
+            "adventure": "",
+            "america": "Mentions Texas, a symbol of traditional American country life.",
+            "carsTrucksTractors": "",
+            "goodtimes": "A call to return to simple pleasures and the joy of life with friends.",
+            "grit": "",
+            "heartbreak": "",
+            "home": "Longing for a return to a peaceful and more grounded way of life.",
+            "lessons": "Critiques materialism and suggests the value of love and simplicity.",
+            "love": "Speaks of a relationship strained by modern pressures, and the desire to rekindle love.",
+            "rebellion": "Pushes back against high society, materialism, and superficial living."
+        },
+        "Title": "Luckenbach, Texas",
+        "VideoLink": "https://www.youtube.com/watch?v=EN1nMZy-0HU"
+        }
+]

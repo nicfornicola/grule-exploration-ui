@@ -47,6 +47,12 @@ h1 {
     width: 25%;
 }
 
+.medalIcon {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+}
+
 .songTitle {
     margin-bottom: 0px;
     border-bottom:2px solid #52728f ;
