@@ -20,12 +20,8 @@ body {
   justify-content: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin-bottom: 10px;
-  margin-top: 0px;
-
+h2 {
+    margin-bottom: 10px;
 }
 
 .appContainer {
@@ -36,43 +32,112 @@ h1 {
 
 .recommendedSongsContainer {
     display: flex;
-    width: 90%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
     margin-top: 20px;
-    border: 2px dotted #213547;
 }
 
-.recommendedSong {
-    margin: 10px;
+.recommendedSongsVideoContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.rSong {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced, with the video at the bottom */
+    padding: 0px 0px 2px 10px;
+    box-sizing: border-box;
+
+}
+
+.recommendedSong0 {
+    margin: 30px 10px 10px 10px;
     width: 25%;
+    box-shadow:  0px 0px 10px 4px #989690;   
+}
+
+.recommendedSong1 {
+    margin: 0px 10px 10px 10px;
+    width: 25%;
+    box-shadow: 0px 0px 10px 4px #EFC75E;   
+}
+
+.recommendedSong2 { 
+    margin: 60px 10px 10px 10px;
+    width: 25%;
+    box-shadow: 0px 0px 10px 4px #ED9D5D;   
+
+}
+
+.recommendedSongVideo {
+    display: flex;
+    justify-content: center; /* Centers the video horizontally */
+    align-items: center;
 }
 
 .medalIcon {
-    position: absolute;
-    width: 22px;
-    height: 22px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 45%;
 }
 
 .songTitle {
-    margin-bottom: 0px;
-    border-bottom:2px solid #52728f ;
+    margin: 0px;
+    border-bottom:2px solid #52728f;
 }
 
-.themesList{
-    margin-top: 5px;
-    width: 100%;
+.themesList {
+    position: relative;
+    margin: 5px 0px 0px 0px;
+    height: 200px;
+    width: auto;
+    overflow-y: hidden; /* Hide scrollbars by default */
+    transition: overflow-y 0.3s ease; /* Smooth transition for scrollbar visibility */
+}
+
+.themesList:hover {
+    overflow-y: scroll; /* Show scrollbars on hover */
+}
+
+/* Customize the scrollbar */
+.themesList::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+}
+
+.themesList::-webkit-scrollbar-thumb {
+    background-color: #9899b0; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.themesList::-webkit-scrollbar-thumb:hover {
+    background-color: #646cff; /* Change color on hover */
+}
+
+.themesList::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
 }
 
 .themesListItem {
-    width: 80%;
+    width: 95%;
+}
+
+.findMeASong {
+    margin-top: 10px;
+}
+
+.findMeASongThemes {
+    margin-bottom: 10px;
 }
 
 .buttonToggleContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     justify-items: center;
-    width: 40%;
+    width: 100%;
 }
 
 .buttonToggle {
@@ -90,7 +155,8 @@ h1 {
 }
 
 .submitButton {
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 button {
@@ -124,3 +190,4 @@ button:focus-visible {
     color: #747bff;
   }
 }
+
