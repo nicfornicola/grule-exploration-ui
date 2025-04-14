@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import mockResponse from './mockResponse.json'
 import bronzeMedal from './assets/bronze_medal.svg';
 import silverMedal from './assets/silver_medal.svg';
@@ -45,8 +43,7 @@ function App() {
                 body: JSON.stringify({"Themes": themes}),
             });
             const data = await response.json();
-            console.log(data);
-
+            
             setResponse(data['body-json']);
             console.log('Response from AWS:', data['body-json']);
         } catch (error) {
@@ -107,8 +104,8 @@ function App() {
                     <div className='recommendedSongsContainer'>
                         {sortedResponse.map((songObject, index) => {
                             return (
-                                <div key={songObject.RuleID} className={`rSong recommendedSong${index}`}>
-                                    {index < 3 && <img className='medalIcon' src={medals[index]}/>}
+                                <div key={songObject.RuleID} className={`rSong recommendedSong${sortedResponse.length === 1 ? 1 : index}`}>
+                                    {index < 3 && <img alt="medal" className='medalIcon' src={sortedResponse.length === 1 ? medals[1] : medals[index]}/>}
                                     <h3 className='songTitle'>{songObject.Title} - {songObject.Artist} <span style={{color: "lightgray"}}>({songObject?.matches})</span></h3>
                                     <ul className='themesList'>
                                         {Object.entries(songObject.Themes).map(([theme, desc]) => {
@@ -122,7 +119,7 @@ function App() {
                                     <div key={songObject.RuleID} className='recommendedSongVideo'>
                                         {songObject.VideoLink && (
                                             <iframe
-                                                width="400"
+                                                width="550"
                                                 height="315"
                                                 src={songObject.VideoLink.replace("watch?v=", "embed/")}
                                                 title={songObject.Title}
